@@ -35,7 +35,7 @@ export default function Auth({ onLogin }) {
   const handleGoogleSuccess = async (credentialResponse) => {
     setLoading(true);
     try {
-      const res = await fetch("https://white-board-app-aww3.onrender.com/google-login", {
+      const res = await fetch("https://whiteboard-backend-vwux.onrender.com/google-login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ credential: credentialResponse.credential }),
@@ -74,8 +74,8 @@ export default function Auth({ onLogin }) {
     }
 
     const url = isSignup 
-      ? "https://white-board-app-aww3.onrender.com/register" 
-      : "https://white-board-app-aww3.onrender.com/login";
+      ? "https://whiteboard-backend-vwux.onrender.com/register" 
+      : "https://whiteboard-backend-vwux.onrender.com/login";
 
     setLoading(true); // <-- Start loading
     setMessage(null);

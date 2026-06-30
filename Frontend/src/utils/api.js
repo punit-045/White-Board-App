@@ -2,7 +2,7 @@ export const updateCanvas = async(canvasId, elements)=>{
   const token = localStorage.getItem("token");
   if (!canvasId || !token) return;
   try {
-    await fetch("https://white-board-app-aww3.onrender.com/canvas/update", {
+    await fetch("https://whiteboard-backend-vwux.onrender.com/canvas/update", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

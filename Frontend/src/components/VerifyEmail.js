@@ -28,7 +28,7 @@ export default function VerifyEmail() {
     setStatus("");
 
     try {
-      const res = await fetch("https://white-board-app-aww3.onrender.com/verify", {
+      const res = await fetch("https://whiteboard-backend-vwux.onrender.com/verify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, code }),
