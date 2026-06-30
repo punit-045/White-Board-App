@@ -2,7 +2,7 @@
 
 Real-time collaborative whiteboard app. Sign up, create a canvas, draw, share it with others, see edits live.
 
-**Live demo:** [your-vercel-url-here]
+**Live demo:** https://white-board-app-inky.vercel.app/
 
 ## Run it locally
 
